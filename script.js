@@ -6,7 +6,7 @@ $(document).ready(function() {
         event.preventDefault();
         // API call to tvmaze
         let tvShow = $('#inputSearch').val();
-        let queryURL = 'http://api.tvmaze.com/singlesearch/shows?q=' + tvShow;
+        let queryURL = 'https://api.tvmaze.com/singlesearch/shows?q=' + tvShow;
         $.ajax({
             url: queryURL,
             method: 'GET'
@@ -32,9 +32,12 @@ $(document).ready(function() {
                 let bookTitle = response.items[0].volumeInfo.title;
                 let bookYear = response.items[0].volumeInfo.publishedDate;
                 let bookDesc = response.items[0].volumeInfo.description;
-                console.log(bookAuthor, bookTitle, bookYear, bookDesc);
+                let bookCover = response.items[0].volumeInfo.imageLinks.thumbnail;
+                console.log(bookAuthor, bookTitle, bookYear, bookDesc, bookCover);
 
+                let searchResultsRow = $('<div class="row"><div class="col-sm-1"><img id = "book1Cover" src =' + bookCover + '></img></div><div class="col-sm-2"><p id = "book1Title">' + bookTitle + '</p><p id = "book1Author">' + bookAuthor + '</p><p id = "book1Year">' + bookYear + '</p></div><div id = "book1Desc" class="col-sm-8">' + bookDesc + '</div><div class="col-sm-1"><Button id = "book1BuyBtn">Buy Here</Button></div></div>')
 
+                $(".container").append(searchResultsRow);
             });
         });
 
