@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"></meta>
   <title>Read More TV</title>
     <link 
         rel="stylesheet" 
@@ -21,7 +22,7 @@
 </nav>
 
 <br>
-    <div class="container" id="search-container">
+    <div class="container-fluid" id="search-container">
         <div class="row">
             <div class="col-sm-12" id="search-title">
                 <h3 id="description">Merge your favorite tv show to books you might like to read</h3>
@@ -33,7 +34,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-6" id="book-search">
+            <div class="col-sm-4" id="book-search">
                 <form>
                     <input id="inputSearch" class="form-control mr-sm-2" type="search" placeholder="Input TV Show" aria-label="Search"></input>
                     <button id = "searchButton" class="btn btn-outline-success my-2 my-sm-0" type="submit" href="pagesearch.html">Find Books</button>
