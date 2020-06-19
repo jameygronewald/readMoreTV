@@ -1,8 +1,23 @@
-#container1 {
+ /* #container1 {
 float: left;
 margin: left;
 }
 
 #navbarSupportedContent {     
     margin-left: center;
+} */
+
+#search-container{
+    text-align: center;
+    display: block;
 }
+
+#search {
+    text-align: center;
+    display: block;
+} 
+
+.nav-link   {
+    margin-left:auto;
+}
+
