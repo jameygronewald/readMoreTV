@@ -1,11 +1,11 @@
- /* #container1 {
+/*  #container1 {
 float: left;
 margin: left;
 }
 
 #navbarSupportedContent {     
     margin-left: center;
-} */
+} 
 
 #search-container{
     text-align: center;
@@ -22,32 +22,46 @@ margin: left;
 #search {
     text-align: center;
     display: block;
-} 
-
+}   */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .contentC {
+    
+   
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+  
+    
+  }  
+  .bookC {
+    
+    
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
 .nav-link   {
     margin-left:auto;
 }
-
-#header-search {
+ #search-container {
+    align-items: center;
 }
-
-img  { 
-    float: left;
+#description {
+  text-align: center;
 }
-
-#search-container1{
-    /* text-align: center; */
-    display: block;
-    /* position: absolute;
-    left: 50%;
-    top: 50%;    
-    margin-top: -11px;
-    margin-left: -75px; */
-    width: 60%;
-    height: 22px;
+#search-bar {
+  text-align: center;
 }
-
-#contact-us  {
-    color:white;
+#searchButton {
+  text-align: center;
 }
-
+#search-container {
+  align-items: center;
+}
+ 
