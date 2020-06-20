@@ -43,7 +43,13 @@ $(document).ready(function() {
                 }
             });
         });
-    });   
-});
+        $('#book1BuyBtn').on('click', function(event) {
+            event.preventDefault();
+           let amazonURL = 'https://www.amazon.com/s?k=' + bookTitle[i] + '&ref=nb_sb_noss_2';
+         
+
+    });
+    });
     // https://www.googleapis.com/books/v1/volumes?q=search+terms
     /* http://api.tvmaze.com/singlesearch/shows?q=Pok%C3%A9mon */
+});
