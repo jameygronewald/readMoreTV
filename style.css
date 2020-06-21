@@ -23,6 +23,7 @@ margin: left;
     text-align: center;
     display: block;
 }   */
+
 #myVideo {
     position: fixed;
     right: 0;
@@ -30,18 +31,14 @@ margin: left;
     min-width: 100%;
     min-height: 100%;
   }
-  .contentC {
-    
-   
+  
+.contentC {
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
-    padding-right:475px;
     font-size: 500px;
-    
   }  
-  .bookC {
-    
-    
+  
+.bookC {
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
     width: 100%;
@@ -49,6 +46,9 @@ margin: left;
   }
 .nav-link   {
     margin-left:auto;
+}
+#prompt {
+    align-items: center;
 }
  #search-container {
     align-items: center;
@@ -89,4 +89,4 @@ margin: left;
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
-  }
+}

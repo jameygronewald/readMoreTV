@@ -36,7 +36,7 @@ $(document).ready(function() {
             $('.container-fluid').empty();
             $('.container-books').empty();
             //API call to google books
-            let queryURL2 = 'https://www.googleapis.com/books/v1/volumes?key=AIzaSyDQcHbPNLRpWvqCjR3cYCQgwCK3Llt09M0&langRestrict=en&q=subject:' + totalGenres;
+            let queryURL2 = 'https://www.googleapis.com/books/v1/volumes?key=AIzaSyDQcHbPNLRpWvqCjR3cYCQgwCK3Llt09M0&langRestrict=en&maxResults=40&q=subject:' + totalGenres;
             $.ajax({
                 url: queryURL2,
                 method: 'GET'
