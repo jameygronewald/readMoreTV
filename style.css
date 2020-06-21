@@ -16,14 +16,16 @@ margin: left;
     text-align: center;
     display: block;
 }   */
-#myVideo {
+
+@media (min-width: 576px){
+/*  #myVideo {
     position: fixed;
     right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-  }
-  .contentC {
+  } 
+/*   .contentC {
     
    
     background: rgba(0, 0, 0, 0.5);
@@ -38,7 +40,7 @@ margin: left;
     color: #f1f1f1;
     width: 100%;
     padding: 20px;
-  }
+  } */ */
 .nav-link   {
     margin-left:auto;
 }
@@ -56,5 +58,6 @@ margin: left;
 }
 #search-container {
   align-items: center;
+}
 }
  
