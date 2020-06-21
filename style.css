@@ -10,6 +10,13 @@ margin: left;
 #search-container{
     text-align: center;
     display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;    
+    margin-top: -11px;
+    margin-left: -75px;
+    width: 150px;
+    height: 22px;
 }
 
 #search {
@@ -28,7 +35,8 @@ margin: left;
    
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
-  
+    padding-right:475px;
+    font-size: 500px;
     
   }  
   .bookC {
@@ -57,4 +65,28 @@ margin: left;
 #search-container {
   align-items: center;
 }
- 
+.bookDescription    {
+    margin-left:20px
+}
+
+.img1   {
+    float:left;
+}
+
+#book-search    {
+    text-align: center;
+}
+
+.btn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
