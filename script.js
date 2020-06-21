@@ -5,7 +5,6 @@ $(document).ready(function() {
     $('#searchButton').on('click', function(event) {
         event.preventDefault();
         // API call to tvmaze
-        console.log('clicked');
         let tvShow = $('#inputSearch').val();
         let queryURL = 'https://api.tvmaze.com/singlesearch/shows?q=' + tvShow;
         $.ajax({
@@ -24,7 +23,7 @@ $(document).ready(function() {
             $('.container-fluid').empty();
             $('.container-books').empty();
             //API call to google books
-            let queryURL2 = 'https://www.googleapis.com/books/v1/volumes?key=AIzaSyDQcHbPNLRpWvqCjR3cYCQgwCK3Llt09M0&q=subject:' + genres[0];
+            let queryURL2 = 'https://www.googleapis.com/books/v1/volumes?key=AIzaSyDQcHbPNLRpWvqCjR3cYCQgwCK3Llt09M0&langRestrict=en&q=subject:' + genres[0];
             $.ajax({
                 url: queryURL2,
                 method: 'GET'
