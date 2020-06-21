@@ -30,7 +30,7 @@ $(document).ready(function() {
                 method: 'GET'
             }).then(function(response) {
                 console.log(response);
-                searchAgainRow = $('<div class="row"><div class ="col-sm-12"><h5 id="prompt">Didn\'t find what you were looking for?</h5></div></div>');
+                searchAgainRow = $('<div class="row"><div class ="col-sm-12"><h3 id="prompt">Didn\'t find what you were looking for?</h3></div></div>');
                 $('.container-fluid').append(searchAgainRow);
                 console.log(tvShow);
                 let i = 0;
