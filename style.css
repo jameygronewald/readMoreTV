@@ -31,8 +31,7 @@ margin: left;
     min-height: 100%;
   }
   .contentC {
-    
-   
+    background-image: url('http://alcalde.texasexes.org/wp-content/uploads/2011/11/use-old-tv-as-dvd-storage-box-1-500x331-copy1.jpg');
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
     /* padding-right:475px; */
@@ -99,6 +98,7 @@ margin: left;
     }
 }
 
-.contact-image  {
+.contact-page-body  {
   background-image: url('http://alcalde.texasexes.org/wp-content/uploads/2011/11/use-old-tv-as-dvd-storage-box-1-500x331-copy1.jpg');
+  border: 5px;
 }
