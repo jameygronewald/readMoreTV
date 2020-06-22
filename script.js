@@ -1,6 +1,6 @@
-$(document).ready(function() {
-    // INITIALIZING GLOBAL VARIABLES
-    let genres = [];
+$(document).ready(function () {
+  // INITIALIZING GLOBAL VARIABLES
+  let genres = [];
 
     $('#searchButton').on('click', function(event) {
         event.preventDefault();
@@ -24,7 +24,7 @@ $(document).ready(function() {
             $('.container-fluid').empty();
             $('.container-books').empty();
             //API call to google books
-            let queryURL2 = 'https://www.googleapis.com/books/v1/volumes?key=AIzaSyDQcHbPNLRpWvqCjR3cYCQgwCK3Llt09M0&q=subject:' + genres[0];
+            let queryURL2 = 'https://www.googleapis.com/books/v1/volumes?key=AIzaSyDQcHbPNLRpWvqCjR3cYCQgwCK3Llt09M0&langRestrict=en&maxResults=40&q=subject:' + genres[0];
             $.ajax({
                 url: queryURL2,
                 method: 'GET'
@@ -34,7 +34,7 @@ $(document).ready(function() {
                 $('.container-fluid').append(searchAgainRow);
                 console.log(tvShow);
                 let i = 0;
-                while (i < 10) {
+                while (i < 40) {
                     let bookAuthor = response.items[i].volumeInfo.authors[0];
                     let bookTitle = response.items[i].volumeInfo.title;
                     let bookYear = response.items[i].volumeInfo.publishedDate;
