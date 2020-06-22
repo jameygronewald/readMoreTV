@@ -54,11 +54,15 @@ $(document).ready(function () {
                     let bookDesc = response.items[i].volumeInfo.description;
                     let bookCover = response.items[i].volumeInfo.imageLinks.thumbnail;
                     let bookPrice = response.items[i].saleInfo.buyLink;
-                    let searchResultsRow = $('<div class="row"><div class="col-lg-2"><img id = "book' + i + 'Cover" src =' + bookCover + '></img></div><div class="col-md-2 bookDescription"><p id = "book' + i + 'Title">' + "Title: "+ bookTitle + '</p><p id = "book' + i + 'Author">' + "Author: " + bookAuthor + '</p><p id = "book' + i + 'Year">' + "Release Date: " + bookYear + '</p><a href="' + bookPrice + '" class="btn btn-dark active rounded-pill" role="button" target="_blank" aria-pressed="true">Buy Here</a></div><div id = "book' + i + 'Desc" class="col-sm-8">' + bookDesc + '</div><div class="col-sm-1"></div></div><br>');
+                    let searchResultsRow = $('<div class="row searchRow"><div class="col-lg-2"><img id = "book' + i + 'Cover" src =' + bookCover + '></img></div><div class="col-md-2 bookDescription"><p id = "book' + i + 'Title">' + "Title: "+ bookTitle + '</p><p id = "book' + i + 'Author">' + "Author: " + bookAuthor + '</p><p id = "book' + i + 'Year">' + "Release Date: " + bookYear + '</p><a href="' + bookPrice + '" class="btn btn-dark active rounded-pill" role="button" target="_blank" aria-pressed="true">Buy Here</a></div><div id = "book' + i + 'Desc" class="col-sm-8">' + bookDesc + '</div></div><br>');
                     $(".container-books").append(searchResultsRow);
                     i++;
                    
                 };
+if (bookDesc.length > 50)   {
+    
+}
+
                 $('#navTitle').on('click', function(){
                     event.preventDefault();
                     $('.container-books').empty();
