@@ -1,6 +1,6 @@
-$(document).ready(function() {
-    // INITIALIZING GLOBAL VARIABLES
-    let genres = [];
+$(document).ready(function () {
+  // INITIALIZING GLOBAL VARIABLES
+  let genres = [];
 
     $('#searchButton').on('click', function(event) {
         event.preventDefault();
@@ -36,7 +36,7 @@ $(document).ready(function() {
             $('.container').empty();
             $('.container-books').empty();
             //API call to google books
-            let queryURL2 = 'https://www.googleapis.com/books/v1/volumes?key=AIzaSyDQcHbPNLRpWvqCjR3cYCQgwCK3Llt09M0&langRestrict=en&maxResults=40&q=subject:' + totalGenres;
+            let queryURL2 = 'https://www.googleapis.com/books/v1/volumes?key=AIzaSyDQcHbPNLRpWvqCjR3cYCQgwCK3Llt09M0&langRestrict=en&maxResults=40&q=subject:' + genres[0];
             $.ajax({
                 url: queryURL2,
                 method: 'GET'
@@ -47,14 +47,14 @@ $(document).ready(function() {
                 $('.container').append(searchAgainRow);
                 console.log(tvShow);
                 let i = 0;
-                while (i < 10) {
+                while (i < 40) {
                     let bookAuthor = response.items[i].volumeInfo.authors[0];
                     let bookTitle = response.items[i].volumeInfo.title;
                     let bookYear = response.items[i].volumeInfo.publishedDate;
                     let bookDesc = response.items[i].volumeInfo.description;
                     let bookCover = response.items[i].volumeInfo.imageLinks.thumbnail;
                     let bookPrice = response.items[i].saleInfo.buyLink;
-                    let searchResultsRow = $('<div class="row"><div class="col-lg-2"><div class="row"><div class ="col-sm-12"><img id = "book' + i + 'Cover" src =' + bookCover + '></img></div></div><div class = "row"><div class="col-sm-12"><a href="' + bookPrice + '" class="buyBtn btn btn-link active" role="button" target="_blank" aria-pressed="true">Buy Here</a></div></div></div><div class="col-md-2 bookDescription"><p id = "book' + i + 'Title">' + "Title: "+ bookTitle + '</p><p id = "book' + i + 'Author">' + "Author: " + bookAuthor + '</p><p id = "book' + i + 'Year">' + "Release Date: " + bookYear + '</p></div><div id = "book' + i + 'Desc" class="col-sm-8">' + bookDesc + '</div></div><br>');
+                    let searchResultsRow = $('<div class="row"><div class="col-lg-2"><img id = "book' + i + 'Cover" src =' + bookCover + '></img><a href="' + bookPrice + '" class="buyBtn btn btn-link active" role="button" target="_blank" aria-pressed="true">Buy Here</a></div><div class="col-md-2 bookDescription"><p id = "book' + i + 'Title">' + "Title: "+ bookTitle + '</p><p id = "book' + i + 'Author">' + "Author: " + bookAuthor + '</p><p id = "book' + i + 'Year">' + "Release Date: " + bookYear + '</p></div><div id = "book' + i + 'Desc" class="col-sm-8">' + bookDesc + '</div></div><br>');
                     $(".container-books").append(searchResultsRow);
                     i++;
                 };
