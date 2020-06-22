@@ -16,12 +16,11 @@
 body {
   color: #fff;
   text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, .5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+
 }
 
 html, body {
   height: 100%;
-  background-color: #333;
   background-image: url('http://alcalde.texasexes.org/wp-content/uploads/2011/11/use-old-tv-as-dvd-storage-box-1-500x331-copy1.jpg');
 }
 
@@ -41,6 +40,7 @@ nav {
      max-width: 420px;
      padding: 15px;
      margin: auto;
+     
 }  
 
 .bookC {
@@ -82,7 +82,7 @@ nav {
     text-align: center;
 }
 
-.btn {
+/* .btn {
     border: none;
     color: white;
     padding: 16px 32px;
@@ -93,7 +93,7 @@ nav {
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
-  }
+  } */
 
   .buyBtn {
       font-size: 12px;
