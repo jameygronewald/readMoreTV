@@ -1,84 +1,101 @@
-/*  #container1 {
-float: left;
-margin: left;
+* {
+    font-family: 'Quicksand', sans-serif;
 }
 
-#navbarSupportedContent {     
-    margin-left: center;
-} 
-
-#search-container{
-    text-align: center;
-    display: block;
-    position: absolute;
-    left: 50%;
-    top: 50%;    
-    margin-top: -11px;
-    margin-left: -75px;
-    width: 150px;
-    height: 22px;
+.form-signin {
+  width: 100%;
+  max-width: 420px;
+  padding: 15px;
+  margin: auto;
+  flex-direction: column;
+  display: flex;
+  background-color: #333;
+  margin-top: 20px;
 }
 
-#search {
+body {
+  color: #fff;
+  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, .5);
+
+}
+
+html, body {
+  height: 100%;
+  background-color: #333;
+  background-image: url('http://alcalde.texasexes.org/wp-content/uploads/2011/11/use-old-tv-as-dvd-storage-box-1-500x331-copy1.jpg');
+}
+
+nav {
+    background-color: #333;
+}
+
+.aboutContainer {
+    background-image: none;
+    background-color: #333;
+    padding: 15px;
+    color: #fff;
     text-align: center;
-    display: block;
-}   */
-#myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-  }
-  .contentC {
-    background-image: url('http://alcalde.texasexes.org/wp-content/uploads/2011/11/use-old-tv-as-dvd-storage-box-1-500x331-copy1.jpg');
-    background: rgba(0, 0, 0, 0.5);
+}
+
+.searchRow {
+    background-image: none;
+    background-color: #333;
+    padding: 15px;
+    color: #fff;
+}
+
+.contentC {
+     width: 100%;
+     max-width: 420px;
+     padding: 15px;
+     margin: auto;
+     
+}  
+
+.bookC {
     color: #f1f1f1;
-    /* padding-right:475px; */
-    font-size: 500px;
-    
-  }  
-  .bookC {
-    
-    
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
-    width: 95%;
-    margin: 50px;
-  }
+    width: 100%;
+    padding: 20px;
+}  
+
 .nav-link   {
     margin-left:auto;
 }
- #search-container {
+
+#search-container {
     align-items: center;
-    
 }
+
 #description {
   text-align: center;
 }
+
 #search-bar {
   text-align: center;
 }
+
 #searchButton {
   text-align: center;
-}
-#search-container {
-  align-items: center;
-}
-.bookDescription    {
-    /* margin-left:20px */
+  margin-top: 20px;
 }
 
+#search-container {
+  align-items: center;
+} 
+
 .img1   {
-    float:left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    display: block;
+    margin-bottom: 15px;
 }
 
 #book-search    {
     text-align: center;
 }
 
-.btn {
-    background-color: #4CAF50; /* Green */
+/* .btn {
     border: none;
     color: white;
     padding: 16px 32px;
@@ -89,16 +106,20 @@ margin: left;
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
+  } */
+
+  .buyBtn {
+      font-size: 12px;
+      padding: 5px;
   }
 
-  @media (max-width: 768px) {
-    body {
-        margin: 0;
-        padding: 0;
+  @media (max-width: 950px) {
+    .img1 {
+        width: 35%;
     }
 }
-
-.contact-page-body  {
-  background-image: url('http://alcalde.texasexes.org/wp-content/uploads/2011/11/use-old-tv-as-dvd-storage-box-1-500x331-copy1.jpg');
-  border: 5px;
+@media (max-width: 768px) {
+    .img1 {
+        width: 50%;
+    }
 }

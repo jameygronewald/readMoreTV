@@ -2,17 +2,16 @@
 
 ## The Repository
 
-This repository consists of a simple HTML file that has been refactored and optimized for search engines and to abide accessibility standards  for a marketing agency. 
-
+This repository consists of two HTML files, a style CSS file, and a javascript file that create a functioning website which combines two APIs that returns relevant books to any given television show.
 
 ## Table of Contents 
-
-If your README is very long, add a table of contents to make it easy for users to find what they need.
 
 * [Installation](#installation)
 * [Usage](#usage)
 * [Credits](#credits)
-* [MIT License](#mit_license)
+* [Description](#description)
+* [APIs Used](#APIs)
+* [MIT License](#License)
 
 ## Installation
 
@@ -20,51 +19,29 @@ Clone the repository found at:
 
 https://github.com/jameygronewald/readMoreTV
 
+![Deployed Website](Assets\Capturereadmoretv.PNG)
+
 Proceed to run the index.html file in your browser.
 
 ## Usage 
 
-This HTML file provides a search function that provides books of a similar genre to a given to television show through the use of API queries.
+Our application provides a search function that returns books of a similar genre to a given television show through the use of API queries.
+
+https://jameygronewald.github.io/readMoreTV/index.html
 
 ## Credits
 
-The provided work was a solo project created as homework for Georgia Tech, Fullstack Flex program.
+The provided work was a collaborative project created as homework for Georgia Tech, Fullstack Flex program.
 
 
 ## Description
-This is an app for users to search TV shows they are watching or have enjoyed and receive book recommendations that have similar genres and/or themes
 
-## User Story
+Our application is a platform for users to input favorite TV series and discover books of a similar genre to read.
+The purpose of our app is to encourage the general public to read more books during the down-time of the pandemic.
+It successfully uses the TVMAZE and Google Books APIs to dynamically generate search results for both mobile and desktop devices.
 
-As someone who watches TV and wants to read more books as an alternative.
-I want a list of books based on TV series that I have watched.
-So that I can find reading material that aligns with my interests.
+## APIs: 
 
-## Acceptance Criteria
-
-GIVEN an app that allows me to search by TV show.
-
-WHEN I input a TV show into the search bar.
-
-THEN I am redirected to a page that returns the related genres.
-
-WHEN I am given the returned genre of the searched material.
-
-THEN I am then provided with a list of books with similar genres/themes.
-
-WHEN I view the list of recommended books.
-
-THEN I see a cover of each book and info on each book.
-
-WHEN I view info of a specific book.
-
-THEN I see the title, author, year of publication, and a blurb about the book.
-
-WHEN I go through the list and do not find a book I want.
-
-THEN I have a search bar at the top of my viewport to try another TV show that provides different results.
-
-## APIs used: 
 TVMAZE
 
 Google Books
@@ -73,7 +50,7 @@ Google Books
 
 MIT License
 
-Copyright (c) [2020] [Brian R. Warner]
+Copyright (c) [2020] [Brian R. Warner, Gregory Monroe II, Jamey Gronewald, Justin Ponthier]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
