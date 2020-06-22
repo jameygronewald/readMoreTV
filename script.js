@@ -24,7 +24,7 @@ $(document).ready(function () {
             $('.container-fluid').empty();
             $('.container-books').empty();
             //API call to google books
-            let queryURL2 = 'https://tastedive.com/api/similar?q=' + genres[0] + '&type=books&k=376252-ReadMore-LY0KXIIC';
+            let queryURL2 = 'https://www.googleapis.com/books/v1/volumes?key=AIzaSyDQcHbPNLRpWvqCjR3cYCQgwCK3Llt09M0&langRestrict=en&maxResults=40&q=subject:' + genres[0];
             $.ajax({
                 url: queryURL2,
                 method: 'GET'
