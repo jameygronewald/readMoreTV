@@ -33,7 +33,7 @@ $(document).ready(function () {
                 j++;
                 console.log(totalGenres);
             };
-            $('.container').empty();
+            $('.container-fluid').empty();
             $('.container-books').empty();
             //API call to google books
             let queryURL2 = 'https://www.googleapis.com/books/v1/volumes?key=AIzaSyDQcHbPNLRpWvqCjR3cYCQgwCK3Llt09M0&langRestrict=en&maxResults=40&q=subject:' + totalGenres;
@@ -58,10 +58,6 @@ $(document).ready(function () {
                     $(".container-books").append(searchResultsRow);
                     i++;
                 };
-if (bookDesc.length > 50)   {
-    
-}
-
                 $('#navTitle').on('click', function(){
                     event.preventDefault();
                     $('.container-books').empty();
@@ -69,8 +65,5 @@ if (bookDesc.length > 50)   {
                 });
             });
         });
-      
     });
-    // https://www.googleapis.com/books/v1/volumes?q=search+terms
-    /* http://api.tvmaze.com/singlesearch/shows?q=Pok%C3%A9mon */
 });
