@@ -124,3 +124,8 @@ nav {
         width: 50%;
     }
 }
+@media (max-width: 768px) {
+    .img1 {
+        width: 50%;
+    }
+}

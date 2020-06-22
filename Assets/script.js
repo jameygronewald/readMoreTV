@@ -58,6 +58,10 @@ $(document).ready(function () {
                     $(".container-books").append(searchResultsRow);
                     i++;
                 };
+if (bookDesc.length > 50)   {
+    
+}
+
                 $('#navTitle').on('click', function(){
                     event.preventDefault();
                     $('.container-books').empty();
