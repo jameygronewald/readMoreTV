@@ -108,11 +108,19 @@ nav {
     cursor: pointer;
   } */
 
-  .buyBtn {
+.buyBtn {
       font-size: 12px;
       padding: 5px;
   }
 
-  @media (max-width: 768px) {
-    
+@media (max-width: 950px) {
+    .img1 {
+        width: 35%;
+    }
+}
+
+@media (max-width: 768px) {
+    .img1 {
+        width: 50%;
+    }
 }
