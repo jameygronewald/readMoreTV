@@ -19,7 +19,7 @@ Clone the repository found at:
 
 https://github.com/jameygronewald/readMoreTV
 
-![Deployed Website](Assets/demoImages/Capturereadmoretv.PNG) -->
+![Deployed Website](./Assets/demoImages/Capturereadmoretv.PNG)
 
 Proceed to run the index.html file in your browser.
 
