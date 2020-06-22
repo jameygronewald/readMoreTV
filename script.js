@@ -60,6 +60,7 @@ $(document).ready(function () {
                 };
                 $('#navTitle').on('click', function(){
                     event.preventDefault();
+                    $('.container-books').empty();
                     location.reload();
                 });
             });
