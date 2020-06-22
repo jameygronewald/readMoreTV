@@ -24,6 +24,10 @@ margin: left;
     display: block;
 }   */
 
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
 #myVideo {
     position: fixed;
     right: 0;
@@ -34,8 +38,6 @@ margin: left;
 .contentC {
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
-    /* padding-right:475px; */
-    font-size: 500px;
   }  
   
 .bookC {
@@ -44,30 +46,33 @@ margin: left;
     width: 100%;
     padding: 20px;
   }
+
 .nav-link   {
     margin-left:auto;
 }
+
 #prompt {
     align-items: center;
 }
+
  #search-container {
-    align-items: center;
-    
+    align-items: center;    
 }
+
 #description {
   text-align: center;
 }
+
 #search-bar {
   text-align: center;
 }
+
 #searchButton {
   text-align: center;
+  margin-top: 20px;
 }
 #search-container {
   align-items: center;
-}
-.bookDescription    {
-    /* margin-left:20px */
 }
 
 .img1   {
@@ -79,7 +84,7 @@ margin: left;
 }
 
 .btn {
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50;
     border: none;
     color: white;
     padding: 16px 32px;
