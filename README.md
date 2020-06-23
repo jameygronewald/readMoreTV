@@ -1,5 +1,11 @@
 # ReadMoreTV
 
+## Description
+
+Our application is a platform for users to input favorite TV series and discover books of a similar genre to read.
+The purpose of our app is to encourage the general public to read more books during the down-time of the pandemic.
+It successfully uses the TVMAZE and Google Books APIs to dynamically generate search results for both mobile and desktop devices.
+
 ## The Repository
 
 This repository consists of two HTML files, a style CSS file, and a javascript file that create a functioning website which combines two APIs that returns relevant books to any given television show.
@@ -19,26 +25,22 @@ Clone the repository found at:
 
 https://github.com/jameygronewald/readMoreTV
 
-![Deployed Website](./Assets/demoImages/Capturereadmoretv.PNG)
-
-Proceed to run the index.html file in your browser.
 
 ## Usage 
 
 Our application provides a search function that returns books of a similar genre to a given television show through the use of API queries.
 
-https://jameygronewald.github.io/readMoreTV/index.html
+[Deployed Site](https://jameygronewald.github.io/readMoreTV/index.html)
+![Image of Deployed Site](./Assets/demoImages/Capturereadmoretv.PNG)
 
 ## Credits
 
-The provided work was a collaborative project created as homework for Georgia Tech, Fullstack Flex program.
+The provided work was a collaborative project created for Georgia Tech, Full-stack Flex program.
 
+## Collaborators
 
-## Description
+This project was created by Brian Warner, Gregory Monroe II, Jamey Gronewald, and Justin Ponthier.
 
-Our application is a platform for users to input favorite TV series and discover books of a similar genre to read.
-The purpose of our app is to encourage the general public to read more books during the down-time of the pandemic.
-It successfully uses the TVMAZE and Google Books APIs to dynamically generate search results for both mobile and desktop devices.
 
 ## APIs: 
 

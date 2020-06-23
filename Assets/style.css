@@ -2,7 +2,7 @@
     font-family: 'Quicksand', sans-serif;
 }
 
-main {
+.mainIndex {
   width: 100%;
   max-width: 420px;
   padding: 15px;
@@ -16,7 +16,6 @@ main {
 body {
   color: #fff;
   text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, .5);
-
 }
 
 html, body {
@@ -44,14 +43,6 @@ nav {
     color: #fff;
 }
 
-.contentC {
-     width: 100%;
-     max-width: 420px;
-     padding: 15px;
-     margin: auto;
-     
-}  
-
 .bookC {
     color: #f1f1f1;
     width: 100%;
@@ -62,26 +53,10 @@ nav {
     margin-left:auto;
 }
 
-#search-container {
-    align-items: center;
-}
-
-#description {
-  text-align: center;
-}
-
-#search-bar {
-  text-align: center;
-}
-
 #searchButton {
   text-align: center;
   margin-top: 20px;
 }
-
-#search-container {
-  align-items: center;
-} 
 
 .img1   {
     margin-left: auto;
@@ -91,39 +66,12 @@ nav {
     margin-bottom: 15px;
 }
 
-#book-search    {
-    text-align: center;
-}
-
-/* .btn {
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-  } */
-
-.buyBtn {
-      font-size: 12px;
-      padding: 5px;
-  }
-
 @media (max-width: 950px) {
     .img1 {
         width: 35%;
     }
 }
 
-@media (max-width: 768px) {
-    .img1 {
-        width: 50%;
-    }
-}
 @media (max-width: 768px) {
     .img1 {
         width: 50%;
