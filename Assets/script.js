@@ -50,10 +50,13 @@ $(document).ready(function () {
                     let bookCover = response.items[i].volumeInfo.imageLinks.thumbnail;
                     let bookPrice = response.items[i].saleInfo.buyLink;
                     let searchResultsRow = $('<div class="row searchRow"><div class="col-lg-2"><img id = "book' + i + 'Cover" src =' + bookCover + '></img></div><div class="col-md-2 bookDescription"><p id = "book' + i + 'Title">' + "Title: "+ bookTitle + '</p><p id = "book' + i + 'Author">' + "Author: " + bookAuthor + '</p><p id = "book' + i + 'Year">' + "Release Date: " + bookYear + '</p><a href="' + bookPrice + '" class="btn btn-dark active rounded-pill" role="button" target="_blank" aria-pressed="true">Buy Here</a></div><div id = "book' + i + 'Desc" class="col-sm-8">' + bookDesc + '</div></div><br>');
-                    $(".container-books").append(searchResultsRow);
+                    if (bookAuthor !== undefined && bookTitle !== undefined && bookYear !== undefined && bookDesc !== undefined && bookCover !== undefined) {
+                        $(".container-books").append(searchResultsRow);
+                    }
                     i++;
                    
                 };
+                
                 // EVENT LISTENER FOR NAV HOME TEXT THAT CLEARS OUT SEARCH FROM ITS CONTAINER AND RELOADS PAGE
                 $('#navTitle').on('click', function(){
                     event.preventDefault();
